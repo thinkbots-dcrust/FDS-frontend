@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'styles';
+import "./styles/index.css";
 import reportWebVitals from './reportWebVitals';
+import Routes from "./routes"
+import {BrowserRouter} from "react-router-dom"
 
 ReactDOM.render(
   <React.StrictMode>
-    <h1>Hello</h1>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
