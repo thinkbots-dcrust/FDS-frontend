@@ -2,13 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import "./styles/index.css";
 import reportWebVitals from './reportWebVitals';
-import "./helpers";
+import Routes from "./routes"
+import {BrowserRouter} from "react-router-dom"
+import 'helpers'
 
 ReactDOM.render(
-	<React.StrictMode>
-		<h1>Hello Updated</h1>
-	</React.StrictMode>,
-	document.getElementById("root")
+  <React.StrictMode>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
