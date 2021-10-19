@@ -27,9 +27,8 @@ const CanteenAdd = () => {
 //styled components
 const AddCont = styled.div`
   ${media.mobile`
-    // border: solid black;  
     display:flex;
-    // height: 100px;
+    flex-direction: row;
     min-width: 260px;
   `}
 `

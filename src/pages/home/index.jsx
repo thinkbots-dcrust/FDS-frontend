@@ -6,7 +6,7 @@ import search from '../../assets/search.svg'
 import pizza from '../../assets/pizza.svg'
 
 //components
-import {CanteenAdd} from "../../components" 
+import {CanteenAdd,OfferCont} from "../../components" 
 
 //baseColors
 import {baseStyles} from "../../styles/base"
@@ -20,6 +20,7 @@ const Home = () => {
         </SearchInput>
       </SearchBar>
       <br />
+      {/* <img src="https://img.icons8.com/color/48/000000/discount--v3.png"/> */}
 
       {/* menu Image Container */}
       <h2>Food Items</h2>
@@ -39,6 +40,14 @@ const Home = () => {
 
       {/* Offers */}
       <h2>Offers</h2>
+      <Offers>
+        <OfferCont/>
+        <OfferCont/>
+        <OfferCont/>
+        <OfferCont/>
+        <OfferCont/>
+      </Offers>
+ 
     </HomeDiv>
   )
 }
@@ -64,17 +73,28 @@ const SearchInput = styled.input`
 
 const MenuImages = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  overflow-x: auto;  
+  height: 100px;
+  overflow-y: hidden;
   
 `
 
 const Image = styled.img`
   height: 80px;
-  // border: solid black;
   padding: 5px;
   margin: 0 5px;
   box-shadow: ${baseStyles.boxShadow.main}
   
+`
+
+const Offers = styled.div`
+  display: flex;
+  width: 100%;
+  overflow-x: auto;  
+  height: 150px;
+  overflow-y: hidden;
+
 `
 
 export default Home;

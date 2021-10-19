@@ -48,7 +48,6 @@ const Cont = styled.div`
   width :  100%;
   min-width: 300px;
   top: 0;
-  // border: solid black;
   display: flex;
   justify-content: space-between;
 `
@@ -57,7 +56,6 @@ const NameBox = styled.div`
   width: 70%;
   padding: 0 5px;
   font-size: 2rem;
-  // border: solid black;
 
   ${media.mobile`
     font-size: 1rem
